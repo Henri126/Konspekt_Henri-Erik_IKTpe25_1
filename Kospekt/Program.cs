@@ -38,7 +38,6 @@ int kasutajavanus = int.Parse(Console.ReadLine());
 //        Console.WriteLine("Yippie! saad monsut osta 😀😀");
 //    }
 //}
-
 //2.2 mitu tingimus kasutades loogilist tehet "and"
     if (kasutajavanus > 0 && kasutajavanus < 18)
     {
