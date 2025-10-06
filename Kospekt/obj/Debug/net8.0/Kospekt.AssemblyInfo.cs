@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kospekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f6c9a48240fc2ab478a0ea86fff8d31338bcd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b4204c2c87ae7cad2d3118633e6aa7c3fe1a1fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kospekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kospekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

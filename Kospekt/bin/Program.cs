@@ -292,38 +292,29 @@ using System.Diagnostics.Metrics;
 //  }
 //}
 
-Console.WriteLine("Tere, sisesta esmine liidetav arv");
-int arv1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Tere, sisesta teine liidetav arv");
-int arv2 = int.Parse(Console.ReadLine());
-Console.WriteLine("sisesta thememärk / * + - ");
-string tehtetüüp = Console.ReadLine();
-
-int tulemus = 0;
-if (tehtetüüp == "+")
+Console.WriteLine("Sisesta ostusumma");
+// () sulupaar mis omab endas funktsioonile vajaliku infot
+// Console adressriav moodul või objekt (Roheline)
+// . midagi selle objekti seest, sarnane windowsi kausta pathis oleva slashiga
+// WriteLine adressritav funktsioon objektlist Console
+double ostusumma = double.Parse(Console.ReadLine());
+if (ostusumma > 100)
 {
-    tulemus = arv1 + arv2;
+    Console.WriteLine("Saad 20% allahindlust!");
 }
-if (tehtetüüp == "-")
-// teeme tingimuslasue if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui söne "-" 
+else if (ostusumma < 101 && ostusumma > 50)
 {
-    tulemus = arv1 - arv2;
+    Console.WriteLine("saad 10% allahindlust");
 }
-// peale tingimust on koodiplokk {} loogeliste sulgude vahel. koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus lahutudaes
-
-
-
-if (tehtetüüp == "*")
+else if (ostusumma < 51 && ostusumma > 20)
 {
-    tulemus = arv1 * arv2;
+    Console.WriteLine("saad 5% allahindlust");
 }
-if (tehtetüüp == "/")
+else if (ostusumma < 21)
 {
-    tulemus = arv1 / arv2;
+    Console.WriteLine("allahindlust ei saa :C");
 }
-if (tehtetüüp == "^")
+else if (ostusumma < 1)
 {
-   tulemus = (int)Math.Pow(arv1, arv2);
+    Console.WriteLine("Sisestatud vigane arv");
 }
-
-Console.WriteLine(tulemus);
