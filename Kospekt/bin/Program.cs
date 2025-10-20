@@ -255,66 +255,139 @@ using System.Diagnostics.Metrics;
 //        //decimal b = 2.0M;
 //        //float c = 3.0f;
 //        //double d = 4.0d;
-//        //char c1 = 'a';
-//        //string s = "tekst";
-//        //var x = "abc";
-//        //var y = 123;
-//        //const int z = 3;
+////        //char c1 = 'a';
+////        //string s = "tekst";
+////        //var x = "abc";
+////        //var y = 123;
+////        //const int z = 3;
 
-//        //int liitimine = 1 + 1;
-//        //int lahutamine = 1 - 1;
-//        //int korrutamine = 1 * 1;
-//        //int jagamine = 1 / 1;
-//        //double astendamine = Math.Pow(2, 2);
-//        //double juurimine = Math.Sqrt(2);
+////        //int liitimine = 1 + 1;
+////        //int lahutamine = 1 - 1;
+////        //int korrutamine = 1 * 1;
+////        //int jagamine = 1 / 1;
+////        //double astendamine = Math.Pow(2, 2);
+////        //double juurimine = Math.Sqrt(2);
 
-//        int arv = 0; // sobib
-//        string söne = "abc"; // sobib
-//        string sisend_string = "abc"; // sobib 
+////        int arv = 0; // sobib
+////        string söne = "abc"; // sobib
+////        string sisend_string = "abc"; // sobib 
 
-// muutuja nimes ei sobi järgnevad sõnad:
-// abstract, as, base, bool, break, byte, case,
-// catch, char, checked, class, const, continue, decimal,
-// default, delegate, do, double, else, enum, event, 
-// explicit, extern, false, finally, fixed, float, for,
-// foreach, goto, if, implicit, in, int, 
-// interface, internal, is, lock, long, namespace, new,
-// null, object, operator, out, overraide, params, 
-// private, protected, public, readonly, ref, return, sbyte, 
-// sealed, short, sizeof, stackalloc, static, string, struct,
-// switch, this, throw, true, try, typeof, uint, 
-// unlong, unchecked, unsafe, ushort, using, virtual, void, 
-// volatile, while.
+//// muutuja nimes ei sobi järgnevad sõnad:
+//// abstract, as, base, bool, break, byte, case,
+//// catch, char, checked, class, const, continue, decimal,
+//// default, delegate, do, double, else, enum, event, 
+//// explicit, extern, false, finally, fixed, float, for,
+//// foreach, goto, if, implicit, in, int, 
+//// interface, internal, is, lock, long, namespace, new,
+//// null, object, operator, out, overraide, params, 
+//// private, protected, public, readonly, ref, return, sbyte, 
+//// sealed, short, sizeof, stackalloc, static, string, struct,
+//// switch, this, throw, true, try, typeof, uint, 
+//// unlong, unchecked, unsafe, ushort, using, virtual, void, 
+//// volatile, while.
 
-// Adresseerime moodulit "Console", punkti abil ütleme et kasutame funktsiooni WriteLine, et kasutajale öelda sõnum 
-// mis asub funktsiooni taga olevate sulgude vahel, antud rida lõppeb lasuelõpumärgiga.
+//// Adresseerime moodulit "Console", punkti abil ütleme et kasutame funktsiooni WriteLine, et kasutajale öelda sõnum 
+//// mis asub funktsiooni taga olevate sulgude vahel, antud rida lõppeb lasuelõpumärgiga.
 
-//  }
+////  }
+////}
+
+//Console.WriteLine("Sisesta ostusumma");
+//// () sulupaar mis omab endas funktsioonile vajaliku infot
+//// Console adressriav moodul või objekt (Roheline)
+//// . midagi selle objekti seest, sarnane windowsi kausta pathis oleva slashiga
+//// WriteLine adressritav funktsioon objektlist Console
+//double ostusumma = double.Parse(Console.ReadLine());
+//if (ostusumma > 100)
+//{
+//    Console.WriteLine("Saad 20% allahindlust!");
+//}
+//else if (ostusumma < 101 && ostusumma > 50)
+//{
+//    Console.WriteLine("saad 10% allahindlust");
+//}
+//else if (ostusumma < 51 && ostusumma > 20)
+//{
+//    Console.WriteLine("saad 5% allahindlust");
+//}
+//else if (ostusumma < 21)
+//{
+//    Console.WriteLine("allahindlust ei saa :C");
+//}
+//else if (ostusumma < 1)
+//{
+//    Console.WriteLine("Sisestatud vigane arv");
 //}
 
-Console.WriteLine("Sisesta ostusumma");
-// () sulupaar mis omab endas funktsioonile vajaliku infot
-// Console adressriav moodul või objekt (Roheline)
-// . midagi selle objekti seest, sarnane windowsi kausta pathis oleva slashiga
-// WriteLine adressritav funktsioon objektlist Console
-double ostusumma = double.Parse(Console.ReadLine());
-if (ostusumma > 100)
+if (true) {} //kaitstud sõna if esile tingimuslause, mille tingimus on suglgude vahel ning millele järgneb 
+              //koodiplokk tingimuse täitumnisel teostatava koodiga 
+else if (true){} //kaitstud sõnad else ja if (else if) kutsuvad esile sekundaarse tingimuslause, mille tingimus 
+                 //on samamoodi sulgude vahel, ning millele peab eelnema alati if või else if´. tingimuse täitumisel
+                 //ja eelneva tingimuse mittetäitmisel teostatakse koodiploki see olev kood 
+else{} //kaitstud sõna else kutsub esile järelltingimuse, millele peab eelnema kas if või else if, ning mille koodi-
+       //ploki sisu täidetakse kõikide if ja else if see olevate tingimuste läbikukkumisel.
+
+int option = 3; //--------
+switch (option) //"switch" on kaitstud sõna alternatiivise tingimusekontrolli jaoks mida saab if else-if asemel kasutada.
+               //sulgude vahel
 {
-    Console.WriteLine("Saad 20% allahindlust!");
+    case 1:
+        break;
+    case 2:
+        break;
+    case 3:
+        break;
+    default:
+        break;
 }
-else if (ostusumma < 101 && ostusumma > 50)
+
+
+/* Sõne tööriistad jm tekstiga seotud */
+string alfa = "a\nb"; // \n -> tekitab ühe sõna sisse reamurde, sõna kus on üks "\n" oma kahte rida 
+string beta = $"a {alfa} b"; // $ -> lubab kasutada muutujaid loogeliste sulgude vahel teksti sees 
+
+
+
+/*Loogilised tehted */
+// && -> loogiline tehe, mida kasutatakse tingimuste kirjutamisel, ning annab positiivse vastuse (ture) juhul kui 
+//      mõlemal pool && märki olevad tingimused on täidetud. Kui üks neist ei ole, siis annab negatiivse vastuse vasutse (false).
+// || -> loogiline tehe, mida kasutatakse tingimuste kirjutamisel, ning mis annab positivse vastuse (true) siis kui 
+//       vähemlat üks tingimus on täidetud. negatiivne vastus (valse) tagastatakse siis, kui kõik tingimused on täitmata.
+// ! -> loogiline tehe, mida kasututatakse tingimuse tulemuse inverteerimiseks. Tulemus mis muidu tagastaks true, hüümärgi
+//      puhul tagastab false, ja vastupidi - tulemus mis muidu tagastaks false, hüümärgi puhul tagastab true.
+
+/*Võrdlusoperaatorid*/
+// == -> on võrtdne. Võrdusmärkide ühel pool olev objekt peab vastama täpselt oma olemuselt Võrdusmärkide teist pool oleva 
+//       objektiga. ei ole sama nagu üks võrdusmärk. üks võrdusmärk omistab, kaks võrdleb.
+// != -> ei ole võrdne. võrdusmärgi ühel pool olev objekt *EI TOHI* olla samal kujul nagu teisel pool olev objekt.
+//       Võrdusoperaator on kombinatsioon "on võrdne" operaatorist, ja loogilisest tehtest "not".
+// > -> on suurem  kui. Märgist vasakul pool olev objekt peaks olema suurem kui paremal pool olev objekt.
+// < -> on väiksem kui. Märgist vasakul pool olev objekt peaks olema 
+
+
+/* Omistusoperaatorid ja kiirtehted */
+int arv = 1;
+arv += 1;
+
+arv -= 1;
+
+arv *= 2;
+
+arv /= 2;
+
+arv++;
+arv--;
+/*Tüklid */
+// 1. do-while 
+do // "do" on kaitstud sõna, mis alustab do-while tsüklit pärast mida on koodiplokk, ning ütleb et tee seda koodi
 {
-    Console.WriteLine("saad 10% allahindlust");
-}
-else if (ostusumma < 51 && ostusumma > 20)
-{
-    Console.WriteLine("saad 5% allahindlust");
-}
-else if (ostusumma < 21)
-{
-    Console.WriteLine("allahindlust ei saa :C");
-}
-else if (ostusumma < 1)
-{
-    Console.WriteLine("Sisestatud vigane arv");
-}
+
+} while (true); // niikaua kuni while järel olevate suglade vahel olev tingimus on täidetud.
+
+// 2. while 
+
+int i = 1; //tsüklimuutuja mis kontrollib "while" tsükli tööd 
+while (i < 5) // "while" on kaitstud sõna mis alustab while tsükli varianti, ilma "do"-ta, ning vajab tihtipeale välisr tskülimuutujat 
+// antud juhul on selleks 1 tsükli tingimus, mis peale "while" sõna on, sulgude vahel, kontrollibiki tingimuse abil, selle
+// // antud juhul on selleks i. Tsükli tingimus, mis peale "while" sõna on, sulgude vahel, kontrollibki tingimuse abil, selle
+// // muutuja olekut. Siin kontrollitakse 
