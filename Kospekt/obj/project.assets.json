@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\Kospekt.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\copy\\Konspekt\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\Kospekt.csproj",
       "projectName": "Kospekt",
-      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\Kospekt.csproj",
+      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\copy\\Konspekt\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\Kospekt.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\Henri126\\copy\\Konspekt\\Konspekt_Henri-Erik_IKTpe25_1\\Kospekt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
