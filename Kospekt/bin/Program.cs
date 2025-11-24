@@ -266,8 +266,9 @@ using System.Diagnostics.Metrics;
 //////        //int korrutamine = 1 * 1;
 //////        //int jagamine = 1 / 1;
 //////        //double astendamine = Math.Pow(2, 2);
-//////        //double juurimine = Math.Sqrt(2);
-
+//////        //double juurimine = Math.Sqrt(2)
+///
+Math.Round(d);
 //////        int arv = 0; // sobib
 //////        string söne = "abc"; // sobib
 //////        string sisend_string = "abc"; // sobib 
@@ -413,3 +414,14 @@ int[] arvuMassiiv2 = [1, 2, 3];
 // -- massiivi sisemised meetodid:
 int hasthismany = arvuMassiiv.Length; // massiivi meetod "Length" mille me saame kasutusele võtta punkti abil, loendab kokku, mitu
                                       // elementi järjendis parajas
+
+/* castimine */
+
+// Castimine on viis, kuidas ühest andmettüübist teist saada. Castimist on kahe eri liiki, automaatne ja manuaalne.
+// automaatne castmine toimub siis, kui teisendatakse väiksemast andmetüppi suuremasse.
+// manuaalne castimine toimub siis, kui tahetakse saada suuremast andmetüübist väiksemat.
+// castitakse nii, et teisendatava muutuja ette, pannakse sulud koos soovitud andmetüübiga.
+
+double newDatal = 2.22d; // tekitame, või on olemas, suure mahuga andmed muutujas newDatal. tegu on double andmetega.
+float dataFloat = (float)newDatal; //"(float)" teisendab double tüüpi andmed float tüüpi andmeteks.
+long dataLong = (long)newDatal; //"(long)" teisendab double tüüpi andmed long tüüpi 
